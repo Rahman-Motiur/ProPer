@@ -1,28 +1,28 @@
-# 🧠 ProPer: Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation
+# ProPer: Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation
 
 ![ProPer Architecture](assets/proper_architecture.png)
 
 **Authors**: Md Motiur Rahman, Saeka Rahman, Smriti Bhatt, Miad Faezipour  
-**Published in**: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025  
+**Published in**: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025 (Submitted)  
 **Paper**: [Link to paper (TBD)](https://arxiv.org/abs/XXXX.XXXXX)  
-**Code**: Coming soon on [GitHub](https://github.com/)
+**Code**: Coming soon on [GitHub](https://github.com/XXXX.XXXXX)
 
 ---
 
-## 📌 Overview
+## Overview
 
 **ProPer** is a novel **single-stage, end-to-end deep learning model** for medical image segmentation that handles multi-rater annotation ambiguity using:
 
-- ✅ Reference-Guided Diversification
-- ✅ Prompt-Bank for Rater Expertise
-- ✅ Prompt-Aware Attention Mapping (PAAM)
-- ✅ Efficient Segmentation with Shared Heads
+- Reference-Guided Diversification
+- Prompt-Bank for Rater Expertise
+- Prompt-Aware Attention Mapping (PAAM)
+- Efficient Segmentation with Shared Heads
 
 Unlike existing approaches that struggle with either inefficiency (two-stage) or lack of personalization (one-stage), ProPer effectively combines both diversification and personalization to deliver **state-of-the-art results**.
 
 ---
 
-## 🔧 Key Features
+## Key Features
 
 - **Dual Encoder-Decoder** setup to learn expert annotation variance.
 - **Dynamic Prompt-Bank** to store and update rater-specific styles.
@@ -32,7 +32,7 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
 
 ---
 
-## 🧪 Datasets Used
+## Datasets Used
 
 | Dataset     | Modality | Annotations | Tasks              |
 |-------------|----------|-------------|--------------------|
@@ -42,7 +42,7 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
 
 ---
 
-## 📈 Performance Highlights
+## Performance Highlights
 
 | Dataset     | Metric           | ProPer (Ours) | Previous Best (D-Persona) |
 |-------------|------------------|---------------|----------------------------|
@@ -54,7 +54,7 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
 
 ---
 
-## 🔍 Research Questions Answered
+## Research Questions Answered
 
 - **RQ1**: Can end-to-end modeling improve personalization? → ✅ Yes  
 - **RQ2**: Does the reference encoder-decoder help? → ✅ Yes  
@@ -63,7 +63,7 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
 
 ---
 
-## 📊 Ablation & Generalization
+## Ablation & Generalization
 
 - Ablation confirms each module (KL loss, PAAM, λ-weighting) improves performance.
 - Generalizes well across **new raters** and **unseen modalities** (QUBIQ).
@@ -71,7 +71,7 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
 
 ---
 
-## 💻 Implementation Details
+## Implementation Details
 
 - **Framework**: PyTorch  
 - **Backbone**: ResNet18 encoder-decoder  
@@ -85,6 +85,45 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
   - Early stopping with patience = 20
 
 ---
+## ⚙️ Setup & Installation
 
-## 📂 Project Structure (when code is released)
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/ProPer.git
+cd ProPer
+---
+
+## Project Structure (when code is released)
+
+```text
+ProPer/
+│
+├── model/                        # Core modules of the ProPer model
+│   ├── encoder.py               # ResNet18-based encoder with KL regularization
+│   ├── decoder.py               # Simple conv decoder for reference/main pathway
+│   ├── paam.py                  # Prompt-aware attention mapping
+│   └── prompt_bank.py           # Dynamic prompt-bank and update mechanism
+│
+├── datasets/                    # Dataset wrappers and loaders
+│   ├── lidc.py                  # LIDC-IDRI dataset preprocessor/loader
+│   └── riga.py                  # RIGA dataset preprocessor/loader
+│
+├── train.py                     # Model training script
+├── test.py                      # Model evaluation and inference
+├── utils.py                     # Loss functions, metrics, visualization
+├── requirements.txt             # Python dependencies
+└── README.md                    # Project overview and usage
+---
+
+
+## Citation
+
+@article{rahman2025proper,
+  title={Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation},
+  author={Rahman, Md Motiur and Rahman, Saeka and Bhatt, Smriti and Faezipour, Miad},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025}
+}
+
+
 
