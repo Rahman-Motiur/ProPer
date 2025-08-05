@@ -1,6 +1,6 @@
 # ProPer: Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation
 
-![ProPer Architecture](assets/proper_architecture.png)
+![ProPer Architecture](assets/Model.png)
 
 **Authors**: Md Motiur Rahman, Saeka Rahman, Smriti Bhatt, Miad Faezipour  
 **Published in**: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025 (Submitted)  
