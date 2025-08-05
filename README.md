@@ -85,15 +85,9 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
   - Early stopping with patience = 20
 
 ---
-## ⚙️ Setup & Installation
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/yourusername/ProPer.git
-cd ProPer
----
 
-## Project Structure (when code is released)
+### Project Structure (when code is released)
 
 ```text
 ProPer/
@@ -113,11 +107,27 @@ ProPer/
 ├── utils.py                     # Loss functions, metrics, visualization
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project overview and usage
----
+```
+## Setup & Installation
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/ProPer.git
+cd ProPer
+```
+### 2. Create environment and install dependencies
+conda create -n proper python=3.8
+conda activate proper
+pip install -r requirements.txt
+
+### 3. Training
+python train.py --dataset lidc --config configs/lidc_config.yaml
+
+### 4. Testing
+python test.py --checkpoint checkpoints/proper_lidc.pth --dataset lidc
 
 ## Citation
-
+```text
 @article{rahman2025proper,
   title={Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation},
   author={Rahman, Md Motiur and Rahman, Saeka and Bhatt, Smriti and Faezipour, Miad},
