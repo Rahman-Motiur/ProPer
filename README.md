@@ -56,10 +56,10 @@ Unlike existing approaches that struggle with either inefficiency (two-stage) or
 
 ## Research Questions Answered
 
-- **RQ1**: Can end-to-end modeling improve personalization? → ✅ Yes  
-- **RQ2**: Does the reference encoder-decoder help? → ✅ Yes  
-- **RQ3**: Do PAAM & prompt-bank updates help? → ✅ Yes  
-- **RQ4**: Can ProPer outperform crowdsourcing methods? → ✅ Yes
+- **RQ1**: Can end-to-end modeling improve personalization? → Yes  
+- **RQ2**: Does the reference encoder-decoder help? → Yes  
+- **RQ3**: Do PAAM & prompt-bank updates help? → Yes  
+- **RQ4**: Can ProPer outperform crowdsourcing methods? → Yes
 
 ---
 
