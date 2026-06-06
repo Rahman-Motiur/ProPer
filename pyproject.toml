@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proper"
+version = "0.1.0"
+description = "Prompt-aware Adaptive Personalization for multi-rater medical image segmentation"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.1", "numpy>=1.23", "pyyaml>=6.0", "tqdm>=4.66", "pillow>=10.0"]
+
+[tool.setuptools.packages.find]
+include = ["proper*"]
