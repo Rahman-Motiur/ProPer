@@ -98,7 +98,7 @@ During training, ProPer uses both reference and main pathways. During inference,
 @article{rahman2025proper,
   title={Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation},
   author={Rahman, Md Motiur and Rahman, Saeka and Bhatt, Smriti and Faezipour, Miad},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  journal={Submitted},
   year={2025}
 }
 ```
