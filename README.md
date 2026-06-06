@@ -69,17 +69,6 @@ Run:
 python scripts/train_proper.py --config configs/proper_lidc_idri.yaml
 ```
 
-## Paper-to-Code Mapping
-
-| Paper component | Code |
-| --- | --- |
-| Main/reference encoders and decoders | `proper/models/encoder_decoder.py` |
-| Prompt-bank generation and least-similar update | `proper/models/prompt_bank.py` |
-| Prompt-Aware Attention Mapping (PAAM) | `proper/models/paam.py` |
-| ProPer forward workflow | `proper/models/proper.py` |
-| KL, personalized, mean, and diversification losses | `proper/training/losses.py` |
-| Dice, GED, soft Dice | `proper/training/metrics.py` |
-
 ## Datasets
 
 The paper evaluates ProPer on:
