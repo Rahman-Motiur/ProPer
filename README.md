@@ -3,7 +3,6 @@
 ![ProPer Architecture](assets/Model.png)
 
 **Authors**: Md Motiur Rahman, Saeka Rahman, Smriti Bhatt, Miad Faezipour  
-**Venue**: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025
 
 ProPer is a single-stage, end-to-end personalized segmentation framework for multi-rater medical images. It learns annotation diversity and rater-specific preferences through reference-guided supervision, a dynamic prompt-bank, and Prompt-Aware Attention Mapping (PAAM).
 
