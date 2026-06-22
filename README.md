@@ -84,10 +84,10 @@ During training, ProPer uses both reference and main pathways. During inference,
 ## Citation
 
 ```bibtex
-@article{rahman2025proper,
+@article{rahman2026proper,
   title={Prompt-aware Adaptive Personalization for Multi-rater Medical Image Segmentation},
-  author={Rahman, Md Motiur and Rahman, Saeka and Bhatt, Smriti and Faezipour, Miad},
+  author={Rahman, Md Motiur and Rahman, Saeka and Shokouhmand, Shiva and Bhatt, Smriti and Faezipour, Miad},
   journal={Submitted},
-  year={2025}
+  year={2026}
 }
 ```
